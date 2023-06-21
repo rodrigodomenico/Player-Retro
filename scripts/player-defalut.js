@@ -2,25 +2,25 @@ var playlist = [
   {
     title: getFileName("musicas/ACDC - Back In Black.mp3"),
     src: "musicas/ACDC - Back In Black.mp3",
-    image: 'imagens/imagemFundo.GIF',
+    image: 'imagens/imagemFundo.gif',
     fundo: 'url("imagens/imagem1.gif")',
   },
   {
     title: getFileName('musicas/Kate Bush - Running up that Hill.mp3'),
     src: 'musicas/Kate Bush - Running up that Hill.mp3',
-    image: 'imagens/imagemFundo2.GIF',
+    image: 'imagens/imagemFundo2.gif',
      fundo: 'url("imagens/imagem2.gif")',
   },
   {
     title: getFileName('musicas/The Clash - Should I Stay or Should I Go.mp3'),
     src: 'musicas/The Clash - Should I Stay or Should I Go.mp3',
-    image: 'imagens/imagemFundo3.GIF',
+    image: 'imagens/imagemFundo3.gif',
       fundo: 'url("imagens/imagem3.webp")',
   },
   {
     title: getFileName('musicas/Stephen Sanchez - Until I Found You.mp3'),
     src: 'musicas/Stephen Sanchez - Until I Found You.mp3',
-    image: 'imagens/imagemFundo4.GIF',
+    image: 'imagens/imagemFundo4.gif',
     fundo: 'url("imagens/imagem4.gif")',
   },
 ]
