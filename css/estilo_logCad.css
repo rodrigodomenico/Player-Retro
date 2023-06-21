@@ -1,0 +1,291 @@
+body {
+  font-family: sans-serif;
+}
+
+.degrade {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0);
+  background-image: url('fundos/imagem1.gif');
+   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 3s;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  background: rgb(197, 63, 63);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  box-shadow: 8px -8px 0px 8px rgb(139 37 37);
+  animation: animate-3;
+  animation-duration: 800ms;
+}
+
+.conteudo {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  margin-top: 11%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.tela {
+  width: 87%;
+  height: 35%;
+  margin-top: 12%;
+  margin-left: 6%;
+  background: rgb(44, 29, 29);
+  box-shadow: 0 0 0px 5px rgb(139 37 37);
+  pointer-events: none;
+}
+
+.botao {
+  width: 61%;
+  height: 65%;
+  margin-top: 16%;
+  margin-left: 20%;
+  border-radius: 50%;
+  background: rgb(218, 153, 32);
+  box-shadow: 0 0 0px 5px rgb(139 37 37);
+}
+
+.moldurabotao {
+  width: 87%;
+  height: 47%;
+  margin-top: 8%;
+  margin-left: 6%;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0px 5px rgb(139 37 37);
+}
+
+.ico {
+  font-size: 35px;
+  color: rgba(139, 37, 37, 0.795);
+}
+
+.ico:hover {
+  cursor: pointer;
+}
+
+.ico-30 {
+  font-size: 30px;
+}
+
+.bt {
+  position: absolute;
+}
+
+.bt-player {
+  left: 45%;
+  top: 75%;
+  transform: rotate(90deg);
+}
+
+.bt-stop {
+  left: 43%;
+  top: 1px;
+}
+
+.bt-skipback {
+  left: 4%;
+  top: 36%;
+}
+
+.bt-skip {
+  left: 80%;
+  top: 53px;
+}
+
+.circuloCentro {
+  width: 41%;
+  height: 42%;
+  margin-top: 27%;
+  margin-left: 30%;
+  border-radius: 50%;
+  background: rgb(218, 153, 32);
+  box-shadow: 0 0 0px 9px rgb(139 37 37);
+}
+
+.tra {
+  font-size: 52px;
+  color: rgba(139, 37, 37, 0.63);
+}
+
+.traClick {
+  color: rgb(104, 26, 26);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.ori-tra-1 {
+  transform: rotate(44deg);
+  left: 15px;
+  top: 6px;
+}
+
+.ori-tra-2 {
+  transform: rotate(-44deg);
+  left: 107px;
+  top: 6px;
+}
+
+.ori-tra-3 {
+  transform: rotate(-44deg);
+  left: 19px;
+  top: 86px;
+}
+
+.ori-tra-4 {
+  transform: rotate(44deg);
+  left: 104px;
+  top: 84px;
+}
+
+.cir {
+  color: rgb(199 120 39);
+  font-size: 40px;
+}
+
+.ori-cir {
+  left: 64px;
+  top: 53px;
+}
+
+.elipse {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  shape-outside: circle(50% at 30%);
+  clip-path: circle(50% at 0%);
+  background: rgba(173, 216, 230, 0.171);
+}
+
+.elipse-1 {
+  transform: rotate(44deg);
+  left: 104px;
+  top: 84px;
+}
+
+.figura {
+  width: 263px;
+  height: 170px;
+  left: -1px;
+  top: -1px;
+  border-radius: 10px;
+  box-shadow: inset -1px 2px 0px 12px rgb(139 37 37);
+  animation-name: entrada;
+  animation-duration: 2s;
+}
+
+.disc-music {
+  font-family: 'Courier New', monospace;
+  font-size: 12 px;
+  color: #a7942c;
+  text-shadow: 2px 2px 0px #000000;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  position: relative;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  white-space: nowrap;
+}
+.pausado {
+  color: #ffd700;
+}
+
+.animation-in {
+  animation: entrada ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* O container geral define a perspectiva */
+.flip-container {
+  perspective: 1000;
+}
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+  width: 320px;
+  height: 480px;
+}
+
+/* define a velocidade da transição */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* esconde o verso durante a animação */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* frente posicionada sobre o verso */
+.front {
+  z-index: 2;
+}
+
+/* verso inicialmente escondido */
+.back {
+  transform: rotateY(180deg);
+}
+
+.track-title-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.texto {
+  width: 82%;
+  margin-top: 45%;
+}
+
+.textoBack {
+  width: 82%;
+  margin-top: 45%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

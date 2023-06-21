@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo_logCad.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="scripts/menu.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="scripts/player-defalut.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <title id="titulo">Player - 2023</title>
+  </head>
+  <body class="degrade" id="fundo">
+    <div id="login" class="conteudo">
+      <div class="card">
+        <div class="card tela" id="player">
+          <div
+            class="flip-container"
+            ontouchstart="this.classList.toggle('hover');"
+            id="div-leg"
+          >
+            <div class="flipper">
+              <div class="front">
+                <img
+                  class="figura absolute"
+                  id="track-image"
+                  src="imagens/imagemFundo.gif"
+                />
+                <div class="texto">
+                  <marquee
+                    id="track-title-2"
+                    class="disc-music pausado"
+                  ></marquee>
+                </div>
+                <!-- Conteúdo da frente -->
+              </div>
+              <div class="back">
+                <!-- Conteúdo do verso -->
+
+                <div class="texto2">
+                  <img
+                    class="figura absolute"
+                    id="track-image-2"
+                    src="imagens/imagemFundo.gif"
+                  />
+                  <div class="textoBack">
+                    <marquee
+                      id="track-title"
+                      class="disc-music pausado"
+                    ></marquee>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card moldurabotao">
+          <div class="card botao">
+            <a
+              class="step bt bt-player"
+              onmouseup="playerUp()"
+              onmousedown="playerDown()"
+              onclick="player() "
+              id="playpause"
+              ><i class="ico ion-eject" id="bt-play"></i
+            ></a>
+            <a
+              class="bt bt-stop"
+              onmouseup="stopUp()"
+              onmousedown="stopDown()"
+              onclick="stop()"
+              id="stop"
+              ><i class="ico-30 ico ion-stop" id="bt-stop"></i
+            ></a>
+            <a
+              class="bt bt-skipback"
+              onmouseup="backUp()"
+              onmousedown="backDown()"
+              onclick="back()"
+              id="back"
+              ><i class="ico ion-skip-backward" id="bt-back"></i
+            ></a>
+            <a
+              class="bt bt-skip"
+              onmouseup="nextUp()"
+              onmousedown="nextDown()"
+              onclick="next()"
+              id="next"
+              ><i class="ico ion-skip-forward" id="bt-next"></i
+            ></a>
+            <div class="circuloCentro"></div>
+            <a class="absolute ori-tra-1"
+              ><i class="tra ion-minus" id="tra-1"> </i
+            ></a>
+            <a class="absolute ori-tra-2"
+              ><i class="tra ion-minus" id="tra-2"> </i
+            ></a>
+            <a class="absolute ori-tra-3"
+              ><i class="tra ion-minus" id="tra-3"> </i
+            ></a>
+            <a class="absolute ori-tra-4"
+              ><i class="tra ion-minus" id="tra-4"> </i
+            ></a>
+            <a class="absolute ori-cir"
+              ><i class="cir absolute ion-record"> </i
+            ></a>
+          </div>
+          <!--
+           <div class="elipse"></div>
+          <div class="elipse"></div>
+          <div class="elipse"></div>
+          <div class="elipse elipse-1 absolute"></div>
+          -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
